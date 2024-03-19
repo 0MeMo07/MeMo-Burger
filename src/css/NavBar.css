@@ -1,0 +1,188 @@
+.NavBar {
+    position: fixed; 
+    top: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: flex;
+    width: 50%; 
+    background-color: rgba(255, 0, 0, 0.7);
+    padding: 10px; 
+    z-index: 10; 
+    border-radius: 0 0 100px 30px;
+    backdrop-filter: invert(80%);
+}
+
+
+.NavBar .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.NavBar img {
+    width: 45px; 
+    height: auto;
+    border-radius: 30px;
+}
+
+.NavBar div a {
+    margin-left: 20px; 
+    color: rgb(255, 255, 255);
+    text-decoration: none; 
+    font-size: 16px; 
+    font-family: Arial, sans-serif; 
+    text-align: left;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+}
+
+.NavBar div a:hover {  
+    border-color: #fff9; 
+    color: #ff0;
+    opacity: 1;
+}
+
+
+.NavBar div a::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.0;
+}
+
+.NavBar div a:hover::before {
+    animation: move 1.5s ease-out;
+}
+
+.NavBar .Cartİcon {
+    font-size: 25px;
+    cursor: pointer;
+}
+.NavBar .Cartİcon:hover {
+    border-color: #fff9; 
+    color: #ff0;
+    opacity: 1;
+}
+.NavBar .Cartİcon:hover::before {
+    
+    animation: move 1.5s ease-out;
+}
+.MobilCartİcon{
+    font-size: 25px;
+}
+
+.NavBar .quantity{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    border-radius: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    right: 20px;
+    width: 20px;
+}
+.MobilCartMenu{
+    position: fixed;
+    z-index: 1;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    justify-items: center !important;
+    text-align: center !important;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+i {
+
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        
+        background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.03) 1%, rgba(255,255,255,0.6) 30%, rgba(255,255,255,0.85) 50%, rgba(255,255,255,0.85) 70%, rgba(255,255,255,0.85) 71%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(1%,rgba(255,255,255,0.03)), color-stop(30%,rgba(255,255,255,0.85)), color-stop(50%,rgba(255,255,255,0.85)), color-stop(70%,rgba(255,255,255,0.85)), color-stop(71%,rgba(255,255,255,0.85)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.03) 1%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,0.85) 50%,rgba(255,255,255,0.85) 70%,rgba(255,255,255,0.85) 71%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.03) 1%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,0.85) 50%,rgba(255,255,255,0.85) 70%,rgba(255,255,255,0.85) 71%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.03) 1%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,0.85) 50%,rgba(255,255,255,0.85) 70%,rgba(255,255,255,0.85) 71%,rgba(255,255,255,0) 100%); /* IE10+ */
+        background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.03) 1%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,0.85) 50%,rgba(255,255,255,0.85) 70%,rgba(255,255,255,0.85) 71%,rgba(255,255,255,0) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+    
+
+       
+
+/*  animating it  */
+        animation: move 2s;
+        animation-delay: 1s;
+        -webkit-animation: move 2s;
+
+        -webkit-animation-delay: 1s;
+        -moz-transform: skew(-10deg,0deg);
+        -moz-animation: move 2s;
+        -moz-animation-delay: 1s;
+        -ms-transform: skew(-10deg,0deg);
+        -ms-animation: move 2s;
+        -ms-animation-delay: 1s;
+        -o-transform: skew(-10deg,0deg);
+        -o-animation: move 2s;
+        -o-animation-delay: 1s;
+    }
+
+/*  */
+@keyframes move {
+    0%  { left: 0; opacity: 0; }
+    5% {opacity: 0.0}
+    48% {opacity: 0.5}
+    80% {opacity: 0.0}
+    100% { left: 100%}
+}
+
+@-webkit-keyframes move {
+    0%  { left: 0; opacity: 0; }
+    5% {opacity: 0.0}
+    48% {opacity: 0.2}
+    80% {opacity: 0.0}
+    100% { left: 100%}
+}
+
+@-moz-keyframes move {
+    0%  { left: 0; opacity: 0; }
+    5% {opacity: 0.0}
+    48% {opacity: 0.2}
+    80% {opacity: 0.0}
+    100% { left: 100%}
+}
+
+@-ms-keyframes move {
+    0%  { left: 0; opacity: 0; }
+    5% {opacity: 0.0}
+    48% {opacity: 0.2}
+    80% {opacity: 0.0}
+    100% { left: 100%}
+}
+
+@-o-keyframes move {
+    0%  { left: 0; opacity: 0; }
+    5% {opacity: 0.0}
+    48% {opacity: 0.2}
+    80% {opacity: 0.0}
+    100% { left: 100%}
+}
+
+
