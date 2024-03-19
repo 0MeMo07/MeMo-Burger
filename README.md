@@ -1,8 +1,50 @@
-# React + Vite
+# MeMo Burger
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is an order management application built using React, Redux and Material-UI.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Usage](#usage)
+- [Technologies](#technologies)
+- [Screenshots](#screenshots)
+- [License](#license)
+
+## Usage
+
+1. Clone the project to your computer:
+   ```bash
+   git clone https://github.com/0MeMo07/MeMo-Burger.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd MeMo-Burger
+   ```
+3. Install the required packages:
+   ```bash
+   npm ci
+   ```
+   or
+   ```bash
+   npm install <packages name>
+   ```
+4. Start the project::
+   ```bash
+   npm run dev
+   ```
+## Technologies
+- ### React
+- ### Redux
+- ### Material-UI
+ 
+## Screenshots
+![Home](./Screenshots/Home.PNG)
+![About](./Screenshots/About.PNG)
+![Menu](./Screenshots/Menu.PNG)
+![Cart](./Screenshots/ShopingCart.PNG)
+![prewiew](./Screenshots/prewiew.PNG)
+![Contact](./Screenshots/Contact.PNG)
+
+## License
+
+This project is licensed under the MIT License. See the [MIT License](LICENSE) file for more information.
