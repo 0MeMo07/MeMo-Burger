@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/0memo07/memo-burger/badge)](https://www.codefactor.io/repository/github/0memo07/memo-burger)
+
 # MeMo Burger
 
 This project is an order management application built using React, Redux and Material-UI.
